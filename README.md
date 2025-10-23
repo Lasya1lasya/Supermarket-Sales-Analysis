@@ -43,11 +43,11 @@ The dataset is also from 2019 and may not reflect current consumer trends.
 ## Role-Based Security (RLS) Implementation
 To protect branch-specific data and control user access, Row-Level Security (RLS) was configured in Power BI.
 
-Roles Created
+### Roles Created
 Role Name	Access Level	Description
-BranchA_Manager	Restricted	Can view data for Branch A only.
-BranchB_Manager	Restricted	Can view data for Branch B only.
-BranchC_Manager	Restricted	Can view data for Branch C only.
+. BranchA_Manager	Restricted	Can view data for Branch A only.
+. BranchB_Manager	Restricted	Can view data for Branch B only.
+. BranchC_Manager	Restricted	Can view data for Branch C only.
 
 ## Implementation Steps
 
