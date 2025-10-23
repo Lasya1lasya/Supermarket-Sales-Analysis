@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/436f183b-6971-4ef9-9595-ae8a3c1847b8" /># Supermarket Sales Data: Exploratory Data Analysis Project
+# Supermarket Sales Data: Exploratory Data Analysis Project
 
 ## Overview
 
