@@ -51,9 +51,9 @@ Created roles in Power BI Desktop → Modeling → Manage Roles.
 
 Added DAX filters to restrict visibility by branch:
 
-[Branch] = "A"
-[Branch] = "B"
-[Branch] = "C"
+1) [Branch] = "A"
+2) [Branch] = "B"
+3) [Branch] = "C"
 
 
 Published the dataset to Power BI Service and assigned roles under Dataset → Security.
