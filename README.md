@@ -1,4 +1,4 @@
-# Supermarket Sales Data: Exploratory Data Analysis Project
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/436f183b-6971-4ef9-9595-ae8a3c1847b8" /># Supermarket Sales Data: Exploratory Data Analysis Project
 
 ## Overview
 
@@ -38,4 +38,43 @@ The dataset is also from 2019 and may not reflect current consumer trends.
 
 3) Obtaining correct values for the cost of goods sold would allow for further analysis of profit margins across product lines.
 
-4) Saturday had the highest total sales while Monday had the lowest total sales. The company can use this information along with other data with a longer timeframe to help optimize staffing. 
+4) Saturday had the highest total sales while Monday had the lowest total sales. The company can use this information along with other data with a longer timeframe to help optimize staffing.
+
+## Role-Based Security (RLS) Implementation
+To protect branch-specific data and control user access, Row-Level Security (RLS) was configured in Power BI.
+
+Roles Created
+Role Name	Access Level	Description
+BranchA_Manager	Restricted	Can view data for Branch A only.
+BranchB_Manager	Restricted	Can view data for Branch B only.
+BranchC_Manager	Restricted	Can view data for Branch C only.
+
+## Implementation Steps
+
+Created roles in Power BI Desktop → Modeling → Manage Roles.
+
+Added DAX filters to restrict visibility by branch:
+
+[Branch] = "A"
+[Branch] = "B"
+[Branch] = "C"
+
+
+Published the dataset to Power BI Service and assigned roles under Dataset → Security.
+
+Tested with “View as Role” to verify restricted access for each branch manager.
+
+Outcome
+
+Ensured that each branch manager only views their respective sales data.
+
+Enhanced data security, governance, and compliance within Power BI Service.
+##  Tech Stack
+
+Power BI Desktop → Data modeling & visualization
+
+Power BI Service → Publishing, RLS setup, and online access control
+
+DAX → Measures & KPIs (Gross Margin, Total Income, Transactions)
+
+Excel/CSV → Data source for branch-level sales
