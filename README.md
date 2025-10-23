@@ -4,23 +4,19 @@
 
 A supermarket chain is looking to expand their business. The company leadership team has provided the data team with historical supermarket sales data. Leadership is interested in finding answers to several questions:
 
-1) What is the average purchase total of a customer's cart?
+1) Which Branch has more customer Transactions?
 2) What was the average overall customer rating?
-3) How do customer ratings compare at each of our 3 branch locations?
+3) What is the Gross income by Branches and which types of Customers gives more Profit?
 4) Which branch location is most profitable?
 5) Do members tend to spend more money than non-members?
 6) What is our best selling product line?
-7) How do sales fluctuate during the week? Which day of the week is most profitable?
+7)What is the Customer spend Overview(low,high,medium spend)?
 
 ## Dataset 
 
 The dataset is a public Kaggle dataset concerning supermarket sales data in Malaysia from January 1st, 2019 to March 30th, 2019.
 
 The dataset is included as a CSV file in this repository and can also be found at https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales/
-
-
-
-
 
 The dataset can be used to answer a number of useful questions about customer ratings, most profitable branch locations, most profitable product lines, and most profitable days of the week. 
 
@@ -38,16 +34,16 @@ The dataset is also from 2019 and may not reflect current consumer trends.
 
 3) Obtaining correct values for the cost of goods sold would allow for further analysis of profit margins across product lines.
 
-4) Saturday had the highest total sales while Monday had the lowest total sales. The company can use this information along with other data with a longer timeframe to help optimize staffing.
+4) There are 37.69% Low Spend Customers,34.39% Medium Spend Customers and 27.92% High Spend Customers from all Branches
 
 ## Role-Based Security (RLS) Implementation
 To protect branch-specific data and control user access, Row-Level Security (RLS) was configured in Power BI.
 
 ### Roles Created
 Role Name	Access Level	Description
-. BranchA_Manager	Restricted	Can view data for Branch A only.
-. BranchB_Manager	Restricted	Can view data for Branch B only.
-. BranchC_Manager	Restricted	Can view data for Branch C only.
+1) BranchA_Manager	Restricted	Can view data for Branch A only.
+2) BranchB_Manager	Restricted	Can view data for Branch B only.
+3) BranchC_Manager	Restricted	Can view data for Branch C only.
 
 ## Implementation Steps
 
